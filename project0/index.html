@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TODO App</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Material Design Bootstrap -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/css/mdb.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+      <div
+  class="jumbotron"
+  style="background-image: url(https://perroninstitute.org/wp-content/uploads/2018/03/WANRI-banner-background-white.jpg);"
+>
+  <div class="text-center">
+    <div>
+      <h2 class="card-title h1-responsive pt-3 mb-5 font-bold">
+        <strong class="text-monospace font-italic">My todo App</strong>
+      </h2>
+      <p class="mx-5 mb-5">
+        <div class="flow-right controls">
+          <button type="button" class="btn btn-primary">
+            Item count <span id="item-count" class="badge badge-info ml-2">0</span>
+          </button>
+          <button type="button" class="btn btn-primary">
+              Unchecked count <span id="unchecked-count" class="badge badge-info ml-2">0</span>
+          </button>
+        </div>
+        <button class="btn btn-outline-info" onClick="newTodo()">New todo</button>
+        <button type="button" class="btn btn-outline-danger" onClick="clearList()">Clear list</button>
+        <ul id="todo-list" class="list-group text-left"></ul>
+      </div>
+      </p>
+    </div>
+  </div>
+
+
+    <script src="./script.js"></script>
+  </body>
+</html>
